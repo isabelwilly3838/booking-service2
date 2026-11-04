@@ -1,0 +1,33 @@
+name: Bug Report
+description: File a bug report to help improve the project
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report this issue!
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS version, browser, runtime, etc.
+      placeholder: e.g., Ubuntu 24.04, Node 20
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: 1. Go to '...' \n 2. Click '...'
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I have verified this is not a duplicate issue.
+          required: true
